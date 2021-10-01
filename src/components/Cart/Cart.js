@@ -28,6 +28,9 @@ const Cart = (props) => {
             <p>Shipping: {shipping}</p>
             <p>tax: {tax.toFixed(2)}</p>
             <p>Grand Total: {grandTotal.toFixed(2)}</p>
+            {
+                props.children
+            }
         </div>
     );
 };
